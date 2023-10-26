@@ -1,0 +1,9 @@
+@use "../utils/" as util;
+
+.game {
+	&-container {
+		@include util.flex();
+		width: 100vw;
+		height: 100vh;
+	}
+}

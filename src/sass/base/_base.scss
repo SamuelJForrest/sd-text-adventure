@@ -1,0 +1,47 @@
+@use "../utils" as var;
+
+body {
+	font-family: var.$font-family;
+	background: var.$purpledark;
+	color: var.$color-white;
+}
+
+.h1 {
+	font-size: var.Rem(48);
+}
+
+.h2 {
+	font-size: var.Rem(40);
+}
+
+.h3 {
+	font-size: var.Rem(32);
+}
+
+.h4 {
+	font-size: var.Rem(24);
+}
+
+.h5 {
+	font-size: var.Rem(20);
+}
+
+.h6 {
+	font-size: var.Rem(18);
+}
+
+@for $i from 1 to 6 {
+	h#{$i} {
+		@extend .h#{$i};
+	}
+}
+
+.highlight {
+	&.__block {
+		display: block;
+	}
+
+	&.__orange {
+		color: var.$orangedark;
+	}
+}
