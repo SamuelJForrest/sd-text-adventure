@@ -33,6 +33,7 @@ body {
 @for $i from 1 to 6 {
 	h#{$i} {
 		@extend .h#{$i};
+		line-height: 1.2;
 	}
 }
 
