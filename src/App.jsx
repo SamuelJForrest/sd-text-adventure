@@ -14,6 +14,14 @@ function App() {
     setScreen(goTo);
   }
 
+  const textMap = GAME_DATA[screen].text.map((text, i) => {
+    const isBold = text.toLowerCase() === 'spindogs' ? ' __bold' : '';
+
+    return (
+      <p key={i} className={"game-text text-center" + isBold}>{text}</p>
+    )
+  })
+
   const buttonMap = GAME_DATA[screen].links.map((button, i) => {
     return (
       <li key={i}>
@@ -36,7 +44,9 @@ function App() {
               }
               {
                 screen > 0 && 
-                <p className="game-text text-center">{GAME_DATA[screen].text}</p>
+                <>
+                  {textMap}
+                </>
               }
 
             </Col>

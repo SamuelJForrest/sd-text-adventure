@@ -8,20 +8,28 @@
 	}
 
 	&-text {
-		font-size: util.Rem(20);
-		line-height: 1.3;
+		line-height: 1.5;
 
 		@media screen and (min-width: util.$lg) {
+			font-size: util.Rem(20);
+		}
+
+		& + .game-text {
+			margin-top: util.Rem(24);
+		}
+
+		&.__bold {
 			font-size: util.Rem(24);
+			font-weight: util.$bold;
 		}
 	}
 
 	&-buttons {
 		@include util.flex($dir: column, $align: stretch, $gap: util.Rem(24));
-		margin-top: util.Rem(60);
+		margin-top: util.Rem(40);
 
 		@media screen and (min-width: util.$lg) {
-			margin-top: util.Rem(75);
+			margin-top: util.Rem(48);
 		}
 	}
 
