@@ -11,7 +11,7 @@
 		line-height: 1.5;
 
 		@media screen and (min-width: util.$lg) {
-			font-size: util.Rem(20);
+			font-size: util.Rem(16);
 		}
 
 		& + .game-text {
@@ -23,7 +23,7 @@
 			font-weight: util.$bold;
 		}
 
-		&.__gameover {
+		&.__orange {
 			font-size: util.Rem(24);
 			font-weight: util.$bold;
 			color: util.$orangemid;

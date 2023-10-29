@@ -16,7 +16,7 @@ function App() {
 
   const textMap = GAME_DATA[screen].text.map((text, i) => {
     const isBold = text.toLowerCase() === 'spindogs' ? ' __bold' : '';
-    const isGameOver = text.toLocaleLowerCase() === 'game over' ? ' __gameover' : '';
+    const isGameOver = text.toLocaleLowerCase() === 'game over' || text.toLowerCase() === 'you have survived' ? ' __orange' : '';
 
     return (
       <p key={i} className={"game-text text-center" + isBold + isGameOver}>{text}</p>
