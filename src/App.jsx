@@ -16,9 +16,10 @@ function App() {
 
   const textMap = GAME_DATA[screen].text.map((text, i) => {
     const isBold = text.toLowerCase() === 'spindogs' ? ' __bold' : '';
+    const isGameOver = text.toLocaleLowerCase() === 'game over' ? ' __gameover' : '';
 
     return (
-      <p key={i} className={"game-text text-center" + isBold}>{text}</p>
+      <p key={i} className={"game-text text-center" + isBold + isGameOver}>{text}</p>
     )
   })
 
@@ -29,6 +30,9 @@ function App() {
       </li>
     )
   })
+
+  const buttonLength = GAME_DATA[screen].links.length;
+  const twoButtons = buttonLength > 1 ? ' __twocol' : '';
 
 	return (
 		<>
@@ -50,8 +54,8 @@ function App() {
               }
 
             </Col>
-            <Col md="8 mx-auto" xl="6">
-              <ul className="game-buttons">
+            <Col md="8 mx-auto" xl={buttonLength > 1 ? '10' : '6'}>
+              <ul className={"game-buttons" + twoButtons}>
                 {buttonMap}
               </ul>
             </Col>

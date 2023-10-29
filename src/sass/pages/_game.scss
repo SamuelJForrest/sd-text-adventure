@@ -22,14 +22,28 @@
 			font-size: util.Rem(24);
 			font-weight: util.$bold;
 		}
+
+		&.__gameover {
+			font-size: util.Rem(24);
+			font-weight: util.$bold;
+			color: util.$orangemid;
+			text-transform: uppercase;
+		}
 	}
 
 	&-buttons {
-		@include util.flex($dir: column, $align: stretch, $gap: util.Rem(24));
 		margin-top: util.Rem(40);
+		display: grid;
+		gap: util.Rem(24);
 
 		@media screen and (min-width: util.$lg) {
 			margin-top: util.Rem(48);
+		}
+
+		&.__twocol {
+			@media screen and (min-width: util.$lg) {
+				grid-template-columns: repeat(2, 1fr);
+			}
 		}
 	}
 

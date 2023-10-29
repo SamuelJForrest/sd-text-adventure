@@ -21,49 +21,75 @@ const GAME_DATA = [
 	},
 	{
 		id: 2,
-		text: ["Page 2"],
+		text: [
+			"Pushing through the final set of doors, you feel the chill instantly. You take a cautious step into the room, an office space where only one flickering light remains. The windows, including the two glass meeting room walls, are completely misted, with the exception of a small piece of writing. You edge toward it.",
+			"'I aM tHe GhOsT oF dEv7, aNd I wIlL hAvE mY rEvEnGe.'",
+			"As you finish reading the message, you feel a breath on your neck. You turn to find... nothing. A loud clang sounds as the doors lock, trapping you inside. There has to be a way out.",
+		],
 		links: [
-			{ buttonText: "Go to page 3", goTo: 3 },
-			{ buttonText: "Go to page 16", goTo: 16 },
+			{ buttonText: "Check meeting room one", goTo: 3 },
+			{ buttonText: "Carry on into the kitchen", goTo: 16 },
 		],
 	},
 	{
 		id: 3,
-		text: ["Page 3"],
+		text: [
+			"The misted glass stops you from seeing into the meeting room. Through the door, slightly ajar, you hear a low whirring sound. You now also notice there is another door, just next to the meeting room door.",
+		],
 		links: [
-			{ buttonText: "Go to page 4", goTo: 4 },
-			{ buttonText: "Go to page 9", goTo: 9 },
+			{ buttonText: "Enter the meeting room", goTo: 4 },
+			{ buttonText: "Take the other door", goTo: 9 },
 		],
 	},
 	{
 		id: 4,
-		text: ["Page 4"],
+		text: [
+			"You enter the meeting room. This room is even colder than the last. On the window opposite the door, there is another message",
+			"'yOu WiLl NeVeR lEaVe ThIs PlAcE. yOu WiLl Be 404... NoT fOuNd.'",
+			"It occurs to you, that this window is on the front of the building. Perhaps you could wipe it away, and signal someone from outside.",
+		],
 		links: [
-			{ buttonText: "go to page 5", goTo: 5 },
-			{ buttonText: "go to page 6", goTo: 6 },
+			{ buttonText: "Wipe the message away", goTo: 5 },
+			{ buttonText: "Insepct the room further", goTo: 6 },
 		],
 	},
 	{
 		id: 5,
-		text: ["Page 5 - death"],
+		text: [
+			"You wipe away the message, but before you can look outside, you hear a low, rumbling noise from behind you.",
+			"The door bursts open, and a tall shadowy figure rushes into the room. Before you can process... it all goes black.",
+			"Game over",
+		],
 		links: [{ buttonText: "new game", goTo: 0 }],
 	},
 	{
 		id: 6,
-		text: ["Page 6"],
+		text: [
+			"You look around the room. The source of the low whirring is the air conditioning. Perhaps that was the source of the cold is building. Who knows how long it has been running?",
+			"Aside from that, there is nothing of note in the room.",
+		],
 		links: [
-			{ buttonText: "go to page 7", goTo: 7 },
-			{ buttonText: "go to page 8", goTo: 8 },
+			{ buttonText: "Exit the meeting room", goTo: 7 },
+			{ buttonText: "Turn off the air conditioning", goTo: 8 },
 		],
 	},
 	{
 		id: 7,
-		text: ["Page 7 - back to the start"],
-		links: [{ buttonText: "go back", goTo: 0 }],
+		text: [
+			"You exit the meeting room. As you come back out into the main office space, you hear a rummaging sound coming from the kitchen. The side door next to meeting room one's door is now opened slighlty. Someone else is here...",
+		],
+		links: [
+			{ buttonText: "Go through side door", goTo: 9 },
+			{ buttonText: "Go to kitchen", goTo: 16 },
+		],
 	},
 	{
 		id: 8,
-		text: ["Page 8 - death!"],
+		text: [
+			"As soon as you touch the air conditioning unit, you hear a low, ominous laugh. Against your best judgement, you ignore it. As you press the off button, you hear an unusually loud click. The unit has been tampered with!",
+			"It bursts into a ball of flames, taking you with it.",
+			"Game over",
+		],
 		links: [{ buttonText: "new game", goTo: 0 }],
 	},
 	{
