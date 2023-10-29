@@ -1,6 +1,5 @@
 {
 	"name": "sd-text-adventure",
-	"private": true,
 	"version": "0.0.0",
 	"homepage": "https://samueljforrest.github.io/sd-text-adventure/",
 	"type": "module",
