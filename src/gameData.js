@@ -9,7 +9,7 @@ const GAME_DATA = [
 		text: [
 			"Of all the nights to break down. Rain hammers down on the windscreen - fourty-five minutes, with no signs of letting up. On the passenger seat lays your phone, long dead.",
 			'"Where am I going to find a phone on a night like this?"',
-			"Holding a jacket over your head, you make off running toward the street when you see one office still has its door open. As you run through the door, you manage to get a glance at the sign above...",
+			"Holding your jacket over your head, you make off running toward the street when you see one office still has its door open. As you run through the door, you manage to get a glance at the sign above...",
 			"Spindogs",
 		],
 		links: [
@@ -22,7 +22,7 @@ const GAME_DATA = [
 	{
 		id: 2,
 		text: [
-			"Pushing through the final set of doors, you feel the chill instantly. You take a cautious step into the room, an office space where only one flickering light remains. The windows, including the two glass meeting room walls, are completely misted, with the exception of a small piece of writing. You edge toward it.",
+			"Pushing through the final set of doors, you feel the chill instantly. You take a cautious step into the room, an office space where only one flickering light remains. The windows, including the two glass meeting rooms, are completely misted, with the exception of a small piece of writing. You edge toward it.",
 			"'I aM tHe GhOsT oF dEv7, aNd I wIlL hAvE mY rEvEnGe.'",
 			"As you finish reading the message, you feel a breath on your neck. You turn to find... nothing. A loud clang sounds as the doors lock, trapping you inside. There has to be a way out.",
 		],
@@ -95,8 +95,8 @@ const GAME_DATA = [
 	{
 		id: 9,
 		text: [
-			"You open the door to pitch blackness. You take a few steps into the room, reaching out to find cupboards, a sink, and then - moving to the other wall - light switches. You click every light switch... nothing.",
-			"You continue feeling your way through the room until your hand reaches a handle. You pull at it, and the light of the fridge gives a dim illumination to the room. With the new light, you look around the room. Back the way you came, you had missed a small cupboard, at the other end of the room, security cameras.",
+			"You open the door to pitch blackness. You take a few steps into the room, reaching out to find cupboards, a sink, and then - moving to the other wall - light switches. You click every light switch and... nothing.",
+			"You continue feeling your way through the room until your hand reaches a handle. You pull at it, and the light of a fridge gives a dim illumination to the room. With the new light, you look around the room. Back the way you came, you had missed a small cupboard, at the other end of the room, security cameras.",
 		],
 		links: [
 			{ buttonText: "Check the cupboard", goTo: 10 },
@@ -106,9 +106,9 @@ const GAME_DATA = [
 	{
 		id: 10,
 		text: [
-			"You pull at the cupboard door, and even though the door would not budge, you hear a quiet gasp from the other side of the door. You keep pulling, but to no avail.",
-			"Exhausted, you drop to your knees, with an exasperated sigh. 'If anyone is in there, I am trying to help you'.",
-			"Silence. Just when you go to pick yourself back up, you hear a rummaging sound from the main room. Something is coming. From the cupboard, the inner lock slides opens with a bang, and a hand reaches out to grab you, dragging you in.",
+			"You pull at the cupboard door, and even though the door doesn't budge, you hear a quiet gasp from the other side of the door. You keep pulling, but to no avail.",
+			"Exhausted, you drop to your knees with an exasperated sigh. 'If anyone is in there, I am trying to help you.'",
+			"Silence. Just as you go to pick yourself up, you hear a rummaging sound from the main room. Something is coming. From the cupboard, the inner lock slides opens, and a hand reaches, dragging you in.",
 		],
 		links: [{ buttonText: "Continue", goTo: 11 }],
 	},
@@ -126,8 +126,8 @@ const GAME_DATA = [
 	{
 		id: 12,
 		text: [
-			"Sneaking out of the cupboard, the fridge light had now closed. You reach around on the wall until you find what you are looking for. Pressing down hard, the fire alarm starts to blare. The two of you split off into different directions, Steve toward the front door, you back into the main room. That's when you see it...",
-			"A tall, shadowed figure, billowing like smoke, moves slowly toward you from the second meeting room. Before it can react, you take off running, weaving through the store room, then through the kitchen, you see the doors burst open, and Steve running out. Pushing through the final sets of doors, you fall to the floor as the doors slam behind you.",
+			"Sneaking out of the cupboard, the fridge light was gone. You reach around on the wall until you find what you are looking for. Pressing down hard, the fire alarm starts to blare. The two of you split off in different directions, Steve toward the front door, you back into the main room. That's when you see it...",
+			"A tall, shadowed figure, billowing like smoke, moves slowly toward you from the second meeting room. Before it can react, you take off running, weaving through the store room, then through the kitchen - from which you see the front door burst open, and Steve running out. Pushing through the final sets of doors, you fall to the floor as the doors slam behind you.",
 			"You have survived",
 		],
 		links: [{ buttonText: "New game", goTo: 0 }],
@@ -233,7 +233,7 @@ const GAME_DATA = [
 	{
 		id: 22,
 		text: [
-			"You springing to your feet and clamber up into the ceiling. You can feel it, whatever it may be, breathing down you neck. You manage to slide into the crawl-space, unscathed. Below, you can hear the storage room being ripped apart in frustration.",
+			"You spring to your feet and clamber up into the ceiling. You can feel it, whatever it may be, breathing down you neck. You manage to slide into the crawl-space, unscathed. Below, you can hear the storage room being ripped apart in frustration.",
 			"The entity burst through another door, that led back into the main office. Once you are sure the coast is clear, you dare to move.",
 			"Crawling slowly, as to not attract any more attention, you feel the cold air of the outside world. You continue until you see a light. With the last of your effort you push yourself out of the crawl-space, and crash into the bushes.",
 			"You have survived",
@@ -283,12 +283,9 @@ const GAME_DATA = [
 	{
 		id: 27, // BACK TO MAIN ROOM
 		text: [
-			"You find yourself back in the main office room. You cannot escape the feeling that you are being watched. The openness of this room made you uneasy. It'd be a good idea to move on from here quickly.",
+			"You find yourself back in the main office room. You cannot escape the feeling that you are being watched. The openness of this room makes you uneasy. It'd be a good idea to move on from here quickly.",
 		],
-		links: [
-			{ buttonText: "Go to meeting room one", goTo: 3 },
-			{ buttonText: "Go into the kitchen", goTo: 16 },
-		],
+		links: [{ buttonText: "Go into the kitchen", goTo: 16 }],
 	},
 ];
 
