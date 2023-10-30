@@ -7,9 +7,9 @@ const GAME_DATA = [
 	{
 		id: 1,
 		text: [
-			"Of all the nights to break down. Rain hammers down on the windscreen - fourty-five minutes, with no signs of letting up. On the passenger seat lays your phone, long dead.",
+			"Of all the nights to break down. Rain hammers on the windscreen - it had been fourty-five minutes, with no signs of letting up. On the passenger seat lays your phone, long dead.",
 			'"Where am I going to find a phone on a night like this?"',
-			"Holding your jacket over your head, you make off running toward the street when you see one office still has its door open. As you run through the door, you manage to get a glance at the sign above...",
+			"Holding your jacket over head, you head toward the street. One office still has its door open. As you run through the door, you manage to get a glance at the sign above...",
 			"Spindogs",
 		],
 		links: [
@@ -24,7 +24,7 @@ const GAME_DATA = [
 		text: [
 			"Pushing through the final set of doors, you feel the chill instantly. You take a cautious step into the room, an office space where only one flickering light remains. The windows, including the two glass meeting rooms, are completely misted, with the exception of a small piece of writing. You edge toward it.",
 			"'I aM tHe GhOsT oF dEv7, aNd I wIlL hAvE mY rEvEnGe.'",
-			"As you finish reading the message, you feel a breath on your neck. You turn to find... nothing. A loud clang sounds as the doors lock, trapping you inside. There has to be a way out.",
+			"You feel a breath on your neck, and turn to find... nothing. A loud clang echoes through the office as the doors lock, trapping you inside. There has to be a way out.",
 		],
 		links: [
 			{ buttonText: "Check meeting room one", goTo: 3 },
@@ -95,12 +95,12 @@ const GAME_DATA = [
 	{
 		id: 9,
 		text: [
-			"You open the door to pitch blackness. You take a few steps into the room, reaching out to find cupboards, a sink, and then - moving to the other wall - light switches. You click every light switch and... nothing.",
-			"You continue feeling your way through the room until your hand reaches a handle. You pull at it, and the light of a fridge gives a dim illumination to the room. With the new light, you look around the room. Back the way you came, you had missed a small cupboard, at the other end of the room, security cameras.",
+			"You open the door to pitch blackness. You take a few steps into the room, reaching out to find cupboards, a sink, and then - moving to the other wall - light switches. You click every switch and... nothing.",
+			"You continue feeling your way through the room until your hand finds a handle. You pull at it, and the light of a fridge gives a dim illumination to the room. With the new light, you look around the room. Back the way you came, you had missed a small cupboard, at the other end of the room, CCTV screens.",
 		],
 		links: [
 			{ buttonText: "Check the cupboard", goTo: 10 },
-			{ buttonText: "Check the security cameras", goTo: 13 },
+			{ buttonText: "Check the CCTV screens", goTo: 13 },
 		],
 	},
 	{
@@ -108,7 +108,7 @@ const GAME_DATA = [
 		text: [
 			"You pull at the cupboard door, and even though the door doesn't budge, you hear a quiet gasp from the other side of the door. You keep pulling, but to no avail.",
 			"Exhausted, you drop to your knees with an exasperated sigh. 'If anyone is in there, I am trying to help you.'",
-			"Silence. Just as you go to pick yourself up, you hear a rummaging sound from the main room. Something is coming. From the cupboard, the inner lock slides opens, and a hand reaches, dragging you in.",
+			"Silence. Just as you go to pick yourself up, you hear a rummaging sound from the main room. Something is coming. From the cupboard, the inner lock slides opens, and a hand reaches out, dragging you in.",
 		],
 		links: [{ buttonText: "Continue", goTo: 11 }],
 	},
@@ -165,7 +165,7 @@ const GAME_DATA = [
 		id: 16,
 		text: [
 			"Pushing the door lightly, you slip into the kitchen, a long room littered with tables and sofas. At the far end of the room is a bathroom, a breakfast bar/kitchen area, and an exit leading around a corner.",
-			"Along one side of the room, all of the window blinds were pulled down, making the room nearly pitch black. The only light came from a small emergency door to your right.",
+			"Along one side of the room, all of the window blinds are pulled down, making the room nearly pitch black. The only light comes from a small emergency door to your right.",
 		],
 		links: [
 			{ buttonText: "Check the emergency door", goTo: 17 },
@@ -254,7 +254,7 @@ const GAME_DATA = [
 	{
 		id: 24,
 		text: [
-			"You turn and run back toward the main office. As you take off, your eyes are drawn to the light of the emergency door. Tables, books, and all other things in the entity's path were hurtled into the air.",
+			"You turn and run back toward the main office. As you take off, your eyes are drawn to the light of the emergency door. Tables, books, and all other things in the entity's path are hurtled into the air.",
 		],
 		links: [
 			{ buttonText: "Try to break down the emergency door", goTo: 25 },
@@ -264,7 +264,7 @@ const GAME_DATA = [
 	{
 		id: 25,
 		text: [
-			"You take a deep breath, and with all of your force, you launch into the emergency door.",
+			"You take a deep breath, and with your remaining strength, you launch into the emergency door.",
 			"It does not budge.",
 			"The world spins as you are thrown back onto the floor. The last thing you see is the entity stood above you...",
 			"Game over",
